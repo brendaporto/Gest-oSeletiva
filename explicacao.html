@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explicação Detalhada - Gestão de Resíduos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="explicacao.js" type="module"></script>
+    <link rel="importmap" href="import-map.json">
+    <style>
+        #animation-container {
+            width: 80%;
+            max-width: 800px;
+            margin: 2rem auto;
+            text-align: center;
+        }
+
+        #animation-svg {
+            width: 100%;
+            height: auto;
+        }
+
+        .step {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .step h3 {
+            color: #2E7D32;
+            margin-bottom: 0.5rem;
+        }
+
+        .step p {
+            color: #555;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="25" fill="#2E7D32"/>
+                        <path d="M25 10 L35 30 L15 30 Z" fill="white"/>
+                    </svg>
+                    <span>EcoGestão</span>
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.html#sobre">Sobre Nós</a></li>
+                <li><a href="index.html#servicos">Serviços</a></li>
+                <li><a href="index.html#impacto">Impacto</a></li>
+                <li><a href="index.html#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="explicacao">
+        <h2>Entenda o Processo de Gestão de Resíduos</h2>
+
+        <div id="animation-container">
+            <svg id="animation-svg" viewBox="0 0 600 400">
+                <!-- Circles replaced with images -->
+                <image id="coleta" x="70" y="50" width="60" height="60" href="coleta.svg" />
+                <image id="triagem" x="220" y="50" width="60" height="60" href="tratamento.svg" />
+                <image id="reciclagem" x="370" y="50" width="60" height="60" href="coleta.svg" />
+                <image id="tratamento" x="520" y="50" width="60" height="60" href="consultoria.svg" />
+
+                <text x="100" y="180" text-anchor="middle">Coleta</text>
+                <text x="250" y="180" text-anchor="middle">Triagem</text>
+                <text x="400" y="180" text-anchor="middle">Reciclagem</text>
+                <text x="550" y="180" text-anchor="middle">Tratamento</text>
+            </svg>
+        </div>
+
+        <div class="step">
+            <h3>Coleta Seletiva</h3>
+            <p>A coleta seletiva é o primeiro passo crucial. Resíduos são separados por tipo (papel, plástico, vidro, metal) para facilitar a reciclagem.</p>
+        </div>
+
+        <div class="step">
+            <h3>Triagem e Processamento</h3>
+            <p>Os materiais coletados são levados para centros de triagem, onde são processados e preparados para reciclagem ou outros métodos de tratamento.</p>
+        </div>
+
+        <div class="step">
+            <h3>Reciclagem e Reutilização</h3>
+            <p>Materiais recicláveis são transformados em novos produtos, reduzindo a necessidade de extrair matérias-primas virgens e economizando energia.</p>
+        </div>
+
+        <div class="step">
+            <h3>Tratamento e Destinação Final</h3>
+            <p>Resíduos não recicláveis passam por tratamento adequado (como compostagem ou incineração com recuperação de energia) antes da destinação final em aterros sanitários controlados.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 EcoGestão. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+<file-path>
+<file-changes>
+{
+    "imports": {
+        "gsap": "https://cdn.skypack.dev/gsap@3.9.1",
+        "gsap/ScrollTrigger": "https://cdn.skypack.dev/gsap@3.9.1/ScrollTrigger.js"
+    }
+}
+</file-changes>
+
